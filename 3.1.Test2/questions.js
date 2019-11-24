@@ -40,17 +40,21 @@ let SuppressionDernierElement =  (langages) => {
 }
 
 let ConversionChaineTableau =  (reseaux_sociaux_chaine) => {
+    return reseaux_sociaux_chaine.split(',')
     
 }
 
 let ConversionTableauChaine =  (langages) => {
+    return langages.join()
 
 }
 
 let TriTableau =  (reseaux_sociaux) => {
+    return reseaux_sociaux.sort()
 
 }
 
 let InversionTableau =  (reseaux_sociaux) =>{
+    return reseaux_sociaux.reverse()
 
 }

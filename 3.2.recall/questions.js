@@ -1,25 +1,30 @@
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    let startWith = array.filter((array) => array.startsWith("a"));
+    return startWith
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    return array.filter(str => /^[aeiou]/i.test(str));
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    return array.filter(array=> array != null);
+    
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+    /*return array.filter(function (el) {
+        return !!el })*/
+
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+   return array.join().reverse()
+    
 }
 
 let everyPossiblePair = (array) => {
-    return 'Write your method here';
+    return array
 }
 
 let allElementsExceptFirstThree = (array) => {
@@ -27,19 +32,20 @@ let allElementsExceptFirstThree = (array) => {
 }
 
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here';
+    array.unshift(element)
+    return array
 }
 
 let sortByLastLetter = (array) => {
-    return 'Write your method here';
+    return array
 }
 
 let getFirstHalf = (string) => {
-    return 'Write your method here';
+    return string.substr(0,3)
 }
 
 let makeNegative = (number) => {
-    return 'Write your method here';
+    return -Math.abs(number)
 }
 
 let numberOfPalindromes = (array) => {
@@ -47,7 +53,7 @@ let numberOfPalindromes = (array) => {
 }
 
 let shortestWord = (array) => {
-    return 'Write your method here';
+    
 }
 
 let longestWord = (array) => {
@@ -55,31 +61,31 @@ let longestWord = (array) => {
 }
 
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    return array.reduce((x, y) => x + y)
 }
 
 let repeatElements = (array) => {
-    return 'Write your method here';
+    return array.join('').repeat(2).split('')
 }
 
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    return parseInt(string)
 }
 
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    return array.reduce((a, b) => (a + b)) / array.length;
 }
 
 let getElementsUntilGreaterThanFive = (array) => {
-    return 'Write your method here';
+    
 }
 
 let convertArrayToObject = (array) => {
-    return 'Write your method here';
+    return array
 }
 
 let getAllLetters = (array) => {
-    return 'Write your method here';
+    return array.sort().join('').split('')
 }
 
 let swapKeysAndValues = (object) => {
